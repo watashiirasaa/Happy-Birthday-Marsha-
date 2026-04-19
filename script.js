@@ -25,7 +25,7 @@ function nextScene(){
 }
 
 /* TYPING */
-let text="u look gorgeous as always";
+let text="you are very special 💖";
 let i=0;
 function typing(){
   if(i<text.length){
@@ -144,4 +144,4 @@ function startFireworks(){
     ctx.fillStyle="white";
     ctx.fillRect(Math.random()*c.width,Math.random()*c.height,3,3);
   }
-}
+      }
