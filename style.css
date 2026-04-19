@@ -1,0 +1,132 @@
+body{
+  margin:0;
+  font-family:'Poppins';
+  background:linear-gradient(135deg,#ff9ecf,#ffc2e2);
+  overflow:hidden;
+  color:white;
+}
+
+/* BACKGROUND */
+.bg{
+  position:fixed;
+  width:200%;
+  height:200%;
+  background:radial-gradient(circle,#ffb6d9,#ff69b4);
+  filter:blur(80px);
+  z-index:-1;
+  animation:move 20s linear infinite;
+}
+@keyframes move{
+  to{transform:translate(-100px,-100px);}
+}
+
+/* SCENE */
+.scene{
+  display:none;
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+}
+.scene.active{display:flex;}
+
+/* CARD */
+.card{
+  background:rgba(255,255,255,0.2);
+  backdrop-filter:blur(25px);
+  padding:30px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(255,105,180,0.5);
+}
+
+/* ZOOM */
+.zoom{
+  animation:zoomIn 1s ease;
+}
+@keyframes zoomIn{
+  from{transform:scale(0.7);opacity:0;}
+  to{transform:scale(1);opacity:1;}
+}
+
+/* TEXT */
+.title{
+  font-family:'Pacifico';
+  font-size:42px;
+}
+.name{
+  font-size:24px;
+}
+.subtitle{
+  opacity:0.8;
+}
+.glow{
+  text-shadow:0 0 20px white;
+}
+
+/* FOTO */
+.photo-frame{
+  padding:10px;
+  border-radius:20px;
+  background:white;
+}
+.photo-frame img{
+  width:180px;
+  border-radius:15px;
+}
+
+/* BUTTON */
+button{
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  background:white;
+  color:#ff4da6;
+  font-weight:bold;
+}
+
+/* BALLOON */
+.balloon{
+  position:absolute;
+  width:60px;
+  height:80px;
+  border-radius:50%;
+  background:radial-gradient(circle,#ff4da6,#ff85c1);
+  cursor:pointer;
+  animation:float 4s infinite ease-in-out;
+}
+@keyframes float{
+  50%{transform:translateY(-20px);}
+}
+
+/* CAKE */
+.cake{
+  font-size:60px;
+}
+
+/* LETTER */
+.letter{
+  background:white;
+  color:#ff4da6;
+  padding:20px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+/* FADE */
+.fade{
+  animation:fadeIn 1s;
+}
+@keyframes fadeIn{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+/* PARTICLES */
+#particles div{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:white;
+  border-radius:50%;
+}

@@ -1,0 +1,91 @@
+l<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Marsha 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- AUDIO -->
+<audio id="bgm" loop src="music.mp3"></audio>
+<audio id="popSound" src="pop.mp3"></audio>
+<audio id="blowSound" src="blow.mp3"></audio>
+<audio id="openSound" src="open.mp3"></audio>
+
+<canvas id="fireworks"></canvas>
+
+<div class="bg"></div>
+<div id="particles"></div>
+
+<!-- SCENE 1 -->
+<div class="scene active" id="scene1">
+  <div class="card intro zoom">
+    <h1 class="title glow">For You 💖</h1>
+    <p class="subtitle">a little surprise for you ✨</p>
+    <button onclick="startApp()">Start 🎀</button>
+  </div>
+</div>
+
+<!-- SCENE 2 -->
+<div class="scene" id="scene2">
+  <div class="card zoom">
+    <h2 class="name">Marsha Andita Dwi Kalisa</h2>
+    <div class="photo-frame">
+      <img src="foto.jpg">
+    </div>
+    <p id="typing"></p>
+    <button onclick="nextScene()">Next 💗</button>
+  </div>
+</div>
+
+<!-- SCENE 3 -->
+<div class="scene" id="scene3">
+  <div class="card zoom">
+    <h2>Pop all balloons 🎈</h2>
+    <p id="counter">0 / 15</p>
+    <div id="balloons"></div>
+  </div>
+</div>
+
+<!-- SCENE 4 -->
+<div class="scene" id="scene4">
+  <div class="card zoom">
+    <h2>Blow the candle 🎂</h2>
+    <div class="cake">
+      🎂 <span id="flame">🔥</span>
+    </div>
+    <p class="hint">tiup mic kamu 🎤</p>
+  </div>
+</div>
+
+<!-- SCENE 5 -->
+<div class="scene" id="scene5">
+  <div class="card zoom">
+    <div class="letter" onclick="openLetter()">💌 Open Letter</div>
+    <div id="letterText" class="hidden fade">
+      <p>
+        Happy Birthday 💖<br><br>
+        Semoga kamu selalu bahagia ✨<br>
+        dan semua impianmu tercapai 💫
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- SCENE 6 -->
+<div class="scene" id="scene6">
+  <div class="card zoom">
+    <h1 class="title glow">Happy Birthday 💖</h1>
+    <p>Shake your phone 🎆</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
