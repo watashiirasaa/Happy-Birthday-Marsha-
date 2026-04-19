@@ -25,7 +25,7 @@ function nextScene(){
 }
 
 /* TYPING */
-let text="you are very special 💖";
+let text="u look gorgeous as always";
 let i=0;
 function typing(){
   if(i<text.length){
